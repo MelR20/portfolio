@@ -3,8 +3,6 @@
     line-height: 1.5;
     font-weight: 400;
     margin: 0;
-    place-items: center;
-    display: flex;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -17,4 +15,6 @@ body{
     min-height: 100%;
     overflow-x: hidden;
     overflow-y:hidden; 
+    display: flex;
+    flex-direction: column;
 }

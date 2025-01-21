@@ -9,11 +9,32 @@
   left: 0%;
 }
 
-.BackgroundCredit{
+.backgroundCredit{
   position: absolute;
   bottom: 0;
   right: 0;
   color: white;
   font-size: 9px;
   padding: 3px;
+}
+
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border-width: 4px;
+  border-color: #EFC9D1;
+  border-style: solid;
+  border-radius: 2em;
+  margin: 50px;
+  width: 80%;
 }
