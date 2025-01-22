@@ -1,12 +1,14 @@
-import './App.css'
+import './styles/App.css'
+import Header from './components/Header'
 
 function App() {
   return (
     <>
       <video className='background' autoPlay loop muted playsInline >
-        <source src="./public/background_loop_vid.mp4" type="video/mp4" />
+        <source src="/background_loop_vid.mp4" type="video/mp4" />
       </video>
       <div className='mainContainer'>
+        <Header/>
         <div className='contentContainer'>
           <h1>Patate</h1>
           <h2>Patate</h2>

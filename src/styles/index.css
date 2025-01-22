@@ -6,7 +6,16 @@
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; 
+    -moz-osx-font-smoothing: grayscale;
+
+    /* colors */
+    --primary: #EFC9D1;
+    --primary_light: #F9E9EC;
+    --secondary: #EBCEEF;
+    --secondary_light: #F4E8F9;
+    --tertiary: #C9E6F4;
+    --tertiary_light: #DCECF6;
+
 }
 
 body{
