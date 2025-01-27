@@ -10,11 +10,15 @@
 
     /* colors */
     --primary: #EFC9D1;
-    --primary_light: #F9E9EC;
+    --primary_light: #FFEDF1;
+    --primary_dark: #D89AA7;
     --secondary: #EBCEEF;
-    --secondary_light: #F4E8F9;
+    --secondary_light: #F9EEFE;
+    --secondary_dark: #D59EDD;
     --tertiary: #C9E6F4;
-    --tertiary_light: #DCECF6;
+    --tertiary_light: #ECF8FF;
+    --tertiary_dark: #7BC2E4;
+    --text_light: #FDFBFD;
 
 }
 

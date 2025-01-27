@@ -43,9 +43,44 @@
   position:sticky;
   top: 0;
   display:flex;
+  flex-direction: row;
   align-items: center;
   width: 100%;
   height: 60px;
   background-color: var(--primary);
   margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.headerNav{
+  display: flex;
+  list-style-type: none;
+  flex: 1;
+}
+
+.headerNavItem{
+  padding: 20px;
+  border-left: var(--primary_light) 2px solid;
+  border-bottom: none;
+  
+}
+
+.headerNavItem:last-child{
+  border-right: var(--primary_light) 2px solid;
+}
+
+.headerNavItemLink{
+  color: var(--text_light);
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px var(--primary_dark);
+  font-size: 1.25em ;
+}
+
+.logoName{
+  margin-left: 20px;
+  color: var(--text_light);
+  text-shadow: 4px 2px 2px var(--primary_dark);
+  font-size: 3em;
+
 }
