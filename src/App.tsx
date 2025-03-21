@@ -1,11 +1,12 @@
 import "./styles/App.css";
 import Header from "./components/Header";
+import background_loop_vid from "./assets/background_loop_vid.mp4";
 
 function App() {
   return (
     <body className="body-global-styling">
       <video className="background" autoPlay loop muted playsInline>
-        <source src="/background_loop_vid.mp4" type="video/mp4" />
+        <source src={background_loop_vid} type="video/mp4" />
       </video>
       <div className="main-container">
         <Header />
