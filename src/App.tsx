@@ -10,8 +10,8 @@ function App() {
       </video>
       <div className="main-container">
         <Header />
-        <div className="grid content-container">
-          <div className="left-column">
+        <div className="content-container">
+          <div className="content-section" id="aPropos">
             <h1>À propos</h1>
             <p>
               Passionnée par la logique, les systèmes et les technologies, j’ai
@@ -25,6 +25,39 @@ function App() {
               mets ces atouts au service du développement logiciel, avec
               l’ambition de créer des solutions efficaces et bien pensées.
             </p>
+          </div>
+          <div className="content-section" id="formations">
+            <h1>Formations</h1>
+            <ul>
+              <li>
+                <h2>Certificat en informatique</h2>
+                <p>Université Laval</p>
+                <p>2024</p>
+              </li>
+              <li>
+                <h2>Certification Professional Scrum Master I (PSM I)</h2>
+                <p>Scrum.org</p>
+                <p>2023</p>
+                <img></img>
+              </li>
+              <li>
+                <h2>Bootcamp en développement Web</h2>
+                <p>Udemy</p>
+                <p>2023</p>
+              </li>
+            </ul>
+          </div>
+          <div className="content-section" id="projects">
+            <h1>Mes Projets</h1>
+            <h2>Gentle Reminder</h2>
+            <p>
+              {" "}
+              Une application mobile de gestion de listes de rappels en React
+              Native avec Typescript. Développement en cours
+            </p>
+          </div>
+          <div className="content-section" id="contact">
+            <h1>Contact</h1>
           </div>
         </div>
       </div>
