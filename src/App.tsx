@@ -11,9 +11,9 @@ function App() {
       <div className="main-container">
         <Header />
         <div className="content-container">
-          <div className="content-section" id="aPropos">
-            <h1>À propos</h1>
-            <p>
+          <div className="content-section grid glassmorphism" id="aPropos">
+            <h1 className="section-title">À propos</h1>
+            <p className="section-text">
               Passionnée par la logique, les systèmes et les technologies, j’ai
               fait le saut de la sexologie vers le développement logiciel.
               Certifiée Scrum Master, j’ai d’abord exploré la programmation en
@@ -26,9 +26,9 @@ function App() {
               l’ambition de créer des solutions efficaces et bien pensées.
             </p>
           </div>
-          <div className="content-section" id="formations">
-            <h1>Formations</h1>
-            <ul>
+          <div className="content-section grid glassmorphism" id="formations">
+            <h1 className="section-title">Formations</h1>
+            <ul className="section-text">
               <li>
                 <h2>Certificat en informatique</h2>
                 <p>Université Laval</p>
@@ -47,17 +47,19 @@ function App() {
               </li>
             </ul>
           </div>
-          <div className="content-section" id="projects">
-            <h1>Mes Projets</h1>
-            <h2>Gentle Reminder</h2>
-            <p>
-              {" "}
-              Une application mobile de gestion de listes de rappels en React
-              Native avec Typescript. Développement en cours
-            </p>
+          <div className="content-section grid glassmorphism" id="projects">
+            <h1 className="section-title">Mes Projets</h1>
+            <div className="section-text">
+              <h2>Gentle Reminder</h2>
+              <p>
+                {" "}
+                Une application mobile de gestion de listes de rappels en React
+                Native avec Typescript. Développement en cours
+              </p>
+            </div>
           </div>
-          <div className="content-section" id="contact">
-            <h1>Contact</h1>
+          <div className="content-section grid glassmorphism" id="contact">
+            <h1 className="section-title">Contact</h1>
           </div>
         </div>
       </div>
