@@ -1,3 +1,7 @@
+import { useState } from "react";
+import dropdownIcon from "../assets/dropdown-icon.png";
+import dropdownIconOpen from "../assets/dropdown-icon-close.png";
+
 const headerNavItems = [
   { name: "À propos", link: "#aPropos" },
   { name: "Formations", link: "#formations" },
@@ -6,10 +10,17 @@ const headerNavItems = [
 ];
 
 const Header = () => {
+  // Managing the header dropdown menu
+  const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
+  const handleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+    console.log(isDropdownOpen);
+  };
+
   return (
-    <header className="header">
-      <div className="desktop-header">
-        <div className="desktop-header-grid">
+    <header className="header-container">
+      <div className="header">
+        <div className="header-grid">
           <div className="header-logo">
             <a href="/" className="header-logo-link">
               <h1 className="logo-name">Mélissa Raymond</h1>
@@ -26,6 +37,18 @@ const Header = () => {
               ))}
             </ul>
           </div>
+          <button
+            className="header-dropdown-button"
+            onClick={() => {
+              handleDropdown();
+            }}
+          >
+            <img
+              src={!isDropdownOpen ? dropdownIcon : dropdownIconOpen}
+              alt="Menu"
+              className="header-dropdown-button-icon"
+            />
+          </button>
         </div>
       </div>
     </header>
